@@ -17,13 +17,15 @@
 				  	<h3>Kies een pizza</h3>
 				</header>
 				<div class="w3-container">
-				 	 <p id="pizzanaam" onclick="showPizzaToppings()"></p>
+				 	 <p id="pizzanaam" onclick="showPizzaPicture()"></p>
 				</div>
-				<header class="w3-container">
-				  	<h3 id="toppingnaam"></h3>
-				</header>
+				<hr>
 				<div class="w3-container">
-				 	 <p id="pizzatoppings" onclick="showPrice()"></p>
+					<img id="pizzaimage" width="400px" height="200px" onclick="showPizzaToppings()">
+				</div>	
+				<hr>
+				<div class="w3-container">
+				 	 <p id="pizzatoppings" onclick="checkToppings()"></p>
 				</div>
 			</div>
 			<div class="w3-card-4"></div>
