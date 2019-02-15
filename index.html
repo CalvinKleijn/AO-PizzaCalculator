@@ -7,30 +7,30 @@
 	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 </head>
 <body>
-	<div class="w3-container w3-blue">
+	<div class="w3-container w3-red">
 		<div class="w3-center">
 			<h1 class="w3-font">Pizza Calculator</h1>	
 		</div>
-		<div class="w3-center w3-white" style="width: 50%; margin-left: 25%">
+		<div class="w3-white" style="width: 40%; margin-left: 30%">
 			<div class="w3-card-4">
-				<header class="w3-container">
-				  	<h3>Kies een pizza</h3>
+				<header class="w3-container" id="pizza-list">
+				  	<h3>Kies een pizza:</h3>
 				</header>
 				<div class="w3-container">
-				 	 <p id="pizzanaam" onclick="showPizzaPicture()"></p>
-				</div>
-				<hr>
-				<div class="w3-container">
-					<img id="pizzaimage" width="400px" height="200px" onclick="showPizzaToppings()">
+					<h3>Dit is de pizza:</h3>
+					<img id="pizza-image" alt="Nog geen pizza geselecteerd" src="" width="300px" height="225px">
+					<h3>De pizza prijs is:</h3>
+					<div id="pizza-price"></div>
+					<h3>Hoe groot wil je de pizza?</h3>
+					<div id="pizza-slices"></div>
+					<h3>Voeg extra ingrediënten toe:</h3>
+					<div id="pizza-toppings"></div>
+					<h3>Totaalprijs is:</h3>
+					<div id="pizza-totalprice"></div>
 				</div>	
-				<hr>
-				<div class="w3-container">
-				 	 <p id="pizzatoppings" onclick="checkToppings()"></p>
-				</div>
 			</div>
-			<div class="w3-card-4"></div>
 		</div>
-		<div class="w3-container w3-blue">
+		<div class="w3-container w3-red">
 			<p class="w3-font w3-center">© Calvin Kleijn</p>
 		</div>	
 	</div>
