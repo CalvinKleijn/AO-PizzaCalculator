@@ -14,6 +14,13 @@ var toppings = [
 	{naam:"Uien",prijs:0.49,},
 ];
 
+/* Slices in een array zetten */
+var slices = [
+	{titel:"Hele pizza",factor:100},
+	{titel:"Drie kwart pizza",factor:75,},
+	{titel:"Halve pizza",factor:50,},
+	{titel:"Kwart pizza",factor:25},
+];
 
 /* Pizza lijst maken doormiddel van een function */
 function showPizzaList() {
