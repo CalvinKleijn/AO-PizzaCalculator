@@ -1,3 +1,15 @@
 .w3-font{
 	font-family: 'Staatliches', cursive;
 }
+
+#pizza-toppings li {
+	list-style-type: none;
+}
+
+#pizza-list li {
+	list-style-type: none;
+}
+
+#pizza-slices li {
+	list-style-type: none;
+}
