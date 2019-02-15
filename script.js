@@ -56,3 +56,13 @@ function showToppingsList() {
 }
 /* Functie bij het laden van de pagina uitvoeren */
 showToppingsList();
+
+/* Specifieke pizza ophalen doormiddel van een function */
+function showSpecificPizza(pizzaId) {
+	/* Prijs showen doormiddel van de HTML te veranderen */
+	var priceElement = document.getElementById('pizza-price');
+	priceElement.innerHTML = '€' + pizzas[pizzaId].prijs;
+	/* Foto showen doormiddel van de SRC te veranderen */
+	var pictureElement = document.getElementById('pizza-image');
+	pictureElement.src = pizzas[pizzaId].foto;
+}
