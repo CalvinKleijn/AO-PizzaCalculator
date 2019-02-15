@@ -66,3 +66,28 @@ function showSpecificPizza(pizzaId) {
 	var pictureElement = document.getElementById('pizza-image');
 	pictureElement.src = pizzas[pizzaId].foto;
 }
+
+/* Slices uitlezen doormiddel van een function */
+function showSlicesList() {
+	/* Unordered list toevoegen in HTML met createElement */
+	var sliceElement = document.createElement('ul');
+	/* Bepalen waar de unordered list moet worden toegevoegd */
+		document.getElementById('pizza-slices').appendChild(sliceElement);
+	/* de 4 slices loopen door een forloop en dan een li en input aanmaken per slice */
+	for (var p = 0; p < slices.length; p++)	{
+		var sliceList = document.createElement('li');
+		var sliceLink = document.createElement('input');
+	/* De input veranderen naar een radio */	
+		sliceLink.type = "radio";
+	/* De radio een naam geven zodat er maar 1 tegelijkertijd aangeklikt kan worden */	
+		sliceLink.name = "sliceLink";
+		sliceLink.innerHTML = slices[p].titel;
+		sliceLink.setAttribute("onclick", `calculatePrice(${p})`);
+		sliceElement.appendChild(sliceList);
+		sliceList.appendChild(sliceLink);
+	/* De slices plaatsen */
+		sliceList.appendChild(document.createTextNode(slices[p].titel));	
+	}
+}
+/* Functie bij het laden van de pagina uitvoeren */
+showSlicesList();
