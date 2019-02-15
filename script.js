@@ -35,4 +35,24 @@ function showPizzaList() {
 /* Functie bij het laden van de pagina uitvoeren */
 showPizzaList();    
 
-
+/* Toppings lijst maken doormiddel van een function */
+function showToppingsList() {
+	/* Unordered list toevoegen in HTML met createElement */
+	var toppingElement = document.createElement('ul');
+	/* Bepalen waar de unordered list moet worden toegevoegd */
+		document.getElementById('pizza-toppings').appendChild(toppingElement);
+	/* De 4 toppings loopen door een forloop en dan een li en input aanmaken per topping */		
+	for (var o = 0; o < toppings.length; o++) {
+		var toppingList = document.createElement('li');
+		var toppingLink = document.createElement('input');
+	/* De input veranderen naar een checkbox */	
+		toppingLink.type = "checkbox";
+		toppingLink.innerHTML = toppings[o].naam;
+		toppingElement.appendChild(toppingList);
+		toppingList.appendChild(toppingLink);
+	/* De toppings plaatsen met de prijs erbij */	
+		toppingList.appendChild(document.createTextNode(toppings[o].naam + ' ' + '€' + toppings[o].prijs));
+	}
+}
+/* Functie bij het laden van de pagina uitvoeren */
+showToppingsList();
