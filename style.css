@@ -13,3 +13,11 @@
 #pizza-slices li {
 	list-style-type: none;
 }
+
+#pizza-delivery li {
+	list-style-type: none;
+}
+
+#pizza-payment li {
+	list-style-type: none;
+}
