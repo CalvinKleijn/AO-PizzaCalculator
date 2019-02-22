@@ -221,6 +221,8 @@ function totalPrice(DeliveryId) {
 function paymentPrice(PaymentId) {
 	/* Id uit de HTML aanroepen en in een variable doen */
     var paymentprice = document.getElementById("pizza-totalprice");
-	/* De prijs in de HTML en berekenen */
-	paymentprice.innerHTML = deliveryVar / 100 * payments[PaymentId].berekening;
+    /* Prijs berekenen en in een variable zetten */
+    paymentVar = deliveryVar / 100 * payments[PaymentId].berekening;
+	/* De prijs in de HTML zetten en afronden op 2 getallen achter de komma's */
+	paymentprice.innerHTML = paymentVar.toFixed(2);
 }
