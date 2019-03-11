@@ -224,5 +224,5 @@ function paymentPrice(PaymentId) {
     /* Prijs berekenen en in een variable zetten */
     paymentVar = deliveryVar / 100 * payments[PaymentId].berekening;
 	/* De prijs in de HTML zetten en afronden op 2 getallen achter de komma's */
-	paymentprice.innerHTML = paymentVar.toFixed(2);
+	paymentprice.innerHTML = paymentVar.toFixed((2));
 }
